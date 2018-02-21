@@ -1,0 +1,139 @@
+{% load static %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Drop Down Navigation</title>
+  <link rel="stylesheet" href="dropdown.css">
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <!--[if lt IE 9]><link rel="stylesheet" href="./ie.css"><![endif]-->
+</head>
+
+<style type="text/css">
+html, 
+body {
+height: 100%;
+}
+
+body {
+
+background-image: url(/static/images/img_large_4.jpg);
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
+
+select#model {
+    min-height: 50px;
+    min-width: 250px;
+    width: 50px !important;
+    background-color: lightgrey;
+    border: 5px solid black;
+
+
+}
+
+select#genre {
+    min-height: 50px;
+    min-width: 250px;
+    width: 50px !important;
+    background-color: lightgrey;
+  border: 5px solid black;
+
+
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+border: 5px solid black;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+input[type=text] {
+    padding:5px 15px; 
+    background:#ccc; 
+border: 5px solid black;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+
+
+	
+
+</style>
+
+<body class="news" >
+  <header>
+<br><br>
+    <div class="nav">
+	<form method=post id=form>
+
+        <ul>
+              <div class="input-field col s12">
+                <center><select name="model" id="model" >
+                  <option selected id=option>Choose model</option>
+                  <option value="HMM" id=option>HMM</option>
+                  <option value="RBM" id=option>RBM</option>
+                  <option value="LSTM" id=option>LSTM</option>
+                  <option value="GRU" id=option>GRU</option>
+                  <option value="GANS" id=option>GANS</option>
+                </select></center>
+              </div>
+          </ul>
+<br><br>
+        <ul>
+              <div class="input-field col s12">
+                <center><select name="genre" id="genre">
+                  <option selected>Choose genre</option>
+                  <option value="classical">Classical</option>
+                  <option value="rockpop">Rock</option></center>
+                  
+                </select>
+              </div>
+          </ul>
+	<br><br>
+	<center><font size="6" color="black">Enter seed:</font></center>
+	<center><input type=text name=seed  value=0 id=seed><br><br></center>
+	<center><input type=submit name=submit value=SUBMIT id=submit onclick="return check()" ></center>
+	</form>
+    </div>
+  </header>
+</body>
+</html>
+
+
+<script>
+
+function check(){
+
+var a=document.getElementById("model").value;
+if( a=="Choose model")
+{alert("Choose a model");return false;}
+else
+{
+var a=document.getElementById("genre").value;
+if( a=="Choose genre")
+{alert("Choose a genre");return false;}
+else
+{
+var a=document.getElementById("seed").value;
+if( a==0)
+{alert("Choose a seed");return false;}
+else
+return true
+}
+}
+}
+
+</script>

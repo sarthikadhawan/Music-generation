@@ -1,0 +1,235 @@
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ribbon Research</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+ 
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{% static 'css/icomoon.css'%}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+	<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{% static 'js/modernizr-2.6.2.min.js' %}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="index.html">Ribbon Research</a>
+							</div>
+						</div>
+						<div class="col-md-9 main-nav">
+							<ul class="nav text-right">
+								<li><a href="/usurvey/uform/"><span>Home</span></a></li>
+								<li><a href="/usurvey/services/">About</a></li>
+								<li class="active"><a href="/usurvey/product/">Form</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
+
+		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(/static/images/img_large_1.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 float-overlay">
+							<h2>Cervical Cancer Form</h2>
+							<h3>Please take a moment to fill out this form for cervical cancer screening.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- END fh5co-intro-section -->
+		<div id="fh5co-product-section" align="center">
+
+
+<form method="post">
+  Age:<br>
+  <input type="number" name="i0"><br><br>
+ Number of sexual partners:<br>
+  <input type="number" name="i1"><br><br>
+First sexual intercourse:<br>
+  <input type="number" name="i2"><br><br>
+Number of pregnancies:<br>
+  <input type="number" name="i3"><br><br>
+Do you smoke?:<br>
+<input type="radio" name="b4" value="Yes" checked>Yes
+  <input type="radio" name="b4" value="No">No
+  <input type="radio" name="b4" value="Other"> Choose not to disclose<br><br>
+[If yes] Years of smoking:<br>
+  <input type="number" name="i5"><br><br>
+[If yes] Estimated packs per year:<br>
+  <input type="number" name="i6"><br><br>
+Do you use hormonal contraceptives?:<br>
+<input type="radio" name="b7" value="Yes" checked>Yes
+  <input type="radio" name="b7" value="No">No
+  <input type="radio" name="b7" value="Other"> Choose not to disclose<br><br>
+[If yes] Years of hormonal contraceptives:<br>
+  <input type="number" name="i8"><br><br>
+IUDs?:<br>
+<input type="radio" name="b9" value="Yes" checked>Yes
+  <input type="radio" name="b9" value="No">No
+  <input type="radio" name="b9" value="Other"> Choose not to disclose<br><br>
+[If yes] Years of IUDs:<br>
+  <input type="number" name="i10"><br><br>
+Do you have any STDs?:<br>
+<input type="radio" name="b11" value="Yes" checked>Yes
+  <input type="radio" name="b11" value="No">No
+  <input type="radio" name="b11" value="Other"> Choose not to disclose<br><br>
+[If yes] Number of STDs:<br>
+  <input type="number" name="i12"><br><br>
+
+
+
+<i>Please fill out STD history below:</i><br><br>
+Condylomatosis:<br>
+<input type="radio" name="b13" value="Yes" checked>Yes
+  <input type="radio" name="b13" value="No">No
+<br><br>
+Cervical Condylomatosis:<br>
+<input type="radio" name="b14" value="Yes" checked>Yes
+  <input type="radio" name="b14" value="No">No
+<br><br>
+Vaginal Condylomatosis:<br>
+<input type="radio" name="b15" value="Yes" checked>Yes
+  <input type="radio" name="b15" value="No">No
+<br><br>
+Vulvo-Perineal Condylomatosis:<br>
+<input type="radio" name="b16" value="Yes" checked>Yes
+  <input type="radio" name="b16" value="No">No
+ <br><br>
+Syphilis:<br>
+<input type="radio" name="b17" value="Yes" checked>Yes
+  <input type="radio" name="b17" value="No">No
+  <br><br>
+Pelvic Inflammatory Disease:<br>
+<input type="radio" name="b18" value="Yes" checked>Yes
+  <input type="radio" name="b18" value="No">No
+ <br><br>
+Genital Herpes:<br>
+<input type="radio" name="b19" value="Yes" checked>Yes
+  <input type="radio" name="b19" value="No">No
+<br><br>
+Molluscum Contagiosum:<br>
+<input type="radio" name="b20" value="Yes" checked>Yes
+  <input type="radio" name="b20" value="No">No
+<br><br>
+AIDS:<br>
+<input type="radio" name="b21" value="Yes" checked>Yes
+  <input type="radio" name="b21" value="No">No
+<br><br>
+HIV:<br>
+<input type="radio" name="b22" value="Yes" checked>Yes
+  <input type="radio" name="b22" value="No">No
+<br><br>
+Hepatitis B:<br>
+<input type="radio" name="b23" value="Yes" checked>Yes
+  <input type="radio" name="b23" value="No">No
+<br><br>
+HPV:<br>
+<input type="radio" name="b24" value="Yes" checked>Yes
+  <input type="radio" name="b24" value="No">No
+<br><br>
+
+Number of diagnosed STDs:<br>
+  <input type="number" name="i25"><br><br>
+[If any] Time since first diagnosis:<br>
+  <input type="number" name="i26"><br><br>
+[If any] Time since last diagnosis:<br>
+  <input type="number" name="i27"><br><br>
+
+Cancer:<br>
+<input type="radio" name="b28" value="Yes" checked>Yes
+  <input type="radio" name="b28" value="No">No
+<br><br>
+CIN:<br>
+<input type="radio" name="b29" value="Yes" checked>Yes
+  <input type="radio" name="b29" value="No">No<br><br>
+HPV:<br>
+<input type="radio" name="b30" value="Yes" checked>Yes
+  <input type="radio" name="b30" value="No">No
+<br><br>
+
+DX:<br>
+<input type="radio" name="b31" value="Yes" checked>Yes
+  <input type="radio" name="b31" value="No">No
+<br><br>
+ 
+<input type="submit" value="Submit">
+</form> 			
+		
+
+	</div>
+	<!-- END: box-wrap -->
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Parallax Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
